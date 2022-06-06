@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font: 1.6rem Helvetica, Arial;
+}
+.container {
+  display: flex;
+  padding: 2rem;
+}
+.filter {
+flex-grow: 1;
+}
+h3 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.sort, .filter_by_route, .filter_by_price, .filter_by_company {
+  display: flex;
+  flex-direction: column;
+}
+#list_more {
+flex-grow: 4;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 2rem;
+}
+#list {
+  width: 100%;
+}
+.list_item {
+  margin-bottom: 2rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+.header_price>span {
+  line-height: 1rem;
+  font-size: 1rem;
+}
+.sublist_item {
+  border-top: 0.2rem solid #0087c9;
+  padding: 0 1rem;
+}
+.sublist_item_route, .sublist_item_time, .sublist_item_company {
+line-height: 3.5rem;
+padding: 0 1rem;
+text-align: center;
+}
+.sublist_item_route {
+  border-bottom: 0.1rem solid #cccccc;
+}
+.sublist_item_transfer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffb168;
+  white-space: nowrap;
+  padding: 0 4rem;
+  height: 1.5rem;
+}
+.sublist_item_transfer hr {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 4rem;
+  padding: 0rem 1rem;
+  background-color: #0087c9;
+  color: #ffffff;
+}
+.choose {
+  line-height: 4rem;
+  width: 100%;
+  background-color: #ffb168 ;
+  color: #ffffff;
+  border: none;
+}
+.choose:hover {
+  cursor: pointer;
+}
+.choose:active {
+  background-color: #cc6200;
+  color: #ffb168;
+}
+.more {
+  line-height: 3rem;
+  width: 20vw;
+  background-color: #f1f1f1;
+  border: 0.1rem solid #000000;
+}
+.more:hover {
+  cursor: pointer;
+}
+.more:active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.long_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

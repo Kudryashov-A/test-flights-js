@@ -11,57 +11,6 @@
 
 <body>
   <div class="container">
-    <div class="filter">
-      <form id="form_filter" action="" method="get">
-        <div class="sort">
-          <h3>Сортировать</h3>
-          <label for="sort_by_price_increase">
-            <input type="radio" name="sort" id="sort_by_price_increase" onchange="sortByPriceIncrease()">
-            - по возрастанию цены
-          </label>
-          <label for="sort_by_price_decrease">
-            <input type="radio" name="sort" id="sort_by_price_decrease" onchange="sortByPriceDecrease()">
-            - по убыванию цены
-          </label>
-          <label for="sort_by_time">
-            <input type="radio" name="sort" id="sort_by_time" onchange="sortByTime()">
-            - по времени в пути
-          </label>
-        </div>
-        <div class="filter_by_route">
-          <h3>Фильтровать</h3>
-          <label for="filter_connect_route">
-            <input type="checkbox" name="filter_route" id="filter_connect_route"
-              onchange="setFilterConnectRoute(checked)">
-            - 1 пересадка
-          </label>
-          <label for="filter_direct_route">
-            <input type="checkbox" name="filter_route" id="filter_direct_route"
-              onchange="setFilterDirectRoute(checked)">
-            - без пересадок
-          </label>
-        </div>
-        <div class="filter_by_price">
-          <h3>Цена</h3>
-          <label for="price_min">
-            От
-            <input name="price" id="price_min" value="0" onchange="setPriceMin(+value)">
-          </label>
-          <label for="price_max">
-            До
-            <input name="price" id="price_max" value="1000000" onchange="setPriceMax(+value)">
-          </label>
-        </div>
-        <div class="filter_by_company">
-          <h3>Авиакомпании</h3>
-        </div>
-      </form>
-    </div>
-    <div id="list_more">
-      <div id="list">
-      </div>
-      <input type="button" class="more" value="Показать еще" onclick="seeMore()">
-    </div>
   </div>
   <script src="script.js"></script>
 </body>

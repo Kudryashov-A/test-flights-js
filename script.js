@@ -102,8 +102,6 @@ const getDate2 = (date2) => {
 
 // Функция отрисовки списка перелётов
 const renderList = (flights, countRoutes, filterParams) => {
-  // const flights = getData(FILENAME).result.flights;
-
   for (let index = 0, index_j = 0; index_j < countRoutes; index++) {
     if (flights[index]) {
       const flight = flights[index].flight;
@@ -127,7 +125,6 @@ const renderList = (flights, countRoutes, filterParams) => {
 
 // Функция отрисовки элемента списка перелётов
 const renderListItem = (flight) => {
-  // const flight = flights[i].flight;
   s1 = flight.legs[0].segments[1] ? 1 : 0;
   s2 = flight.legs[1].segments[1] ? 1 : 0;
   const listItem = document.createElement('div');
